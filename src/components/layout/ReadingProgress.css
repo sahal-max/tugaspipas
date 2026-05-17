@@ -1,0 +1,32 @@
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 60;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.reading-progress__bar {
+  height: 100%;
+  width: 100%;
+  transform-origin: left center;
+  transform: scaleX(0);
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-blue) 0%,
+    #a4dfff 50%,
+    var(--color-accent-blue) 100%
+  );
+  box-shadow: 0 0 8px rgba(87, 193, 255, 0.65);
+  will-change: transform;
+  transition: transform 0.08s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress__bar {
+    transition: none;
+  }
+}

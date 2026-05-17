@@ -1,0 +1,113 @@
+:root {
+  /* Brand & Accent */
+  --color-primary: #ffffff;
+  --color-primary-pressed: #e8e8e8;
+  --color-on-primary: #000000;
+
+  /* Surface ladder */
+  --color-canvas: #07080a;
+  --color-surface: #0d0d0d;
+  --color-surface-elevated: #101111;
+  --color-surface-card: #121212;
+  --color-button-fg: #18191a;
+
+  /* Text */
+  --color-ink: #f4f4f6;
+  --color-body: #cdcdcd;
+  --color-charcoal: #d3d3d4;
+  --color-mute: #9c9c9d;
+  --color-ash: #6a6b6c;
+  --color-stone: #434345;
+  --color-on-dark: #ffffff;
+  --color-on-dark-mute: rgba(255, 255, 255, 0.72);
+
+  /* Hairline */
+  --color-hairline: #242728;
+  --color-hairline-soft: rgba(255, 255, 255, 0.08);
+  --color-hairline-strong: rgba(255, 255, 255, 0.16);
+
+  /* Accents (reserved for illustration) */
+  --color-accent-blue: #57c1ff;
+  --color-accent-blue-soft: rgba(87, 193, 255, 0.15);
+  --color-accent-red: #ff6161;
+  --color-accent-red-soft: rgba(255, 97, 97, 0.15);
+  --color-accent-green: #59d499;
+  --color-accent-green-soft: rgba(89, 212, 153, 0.15);
+  --color-accent-yellow: #ffc533;
+  --color-accent-yellow-soft: rgba(255, 197, 51, 0.15);
+
+  /* Brand gradients */
+  --color-hero-stripe-start: #ff5757;
+  --color-hero-stripe-end: #a1131a;
+  --color-key-bg-start: #121212;
+  --color-key-bg-end: #0d0d0d;
+
+  /* Radius */
+  --radius-none: 0px;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-section: 96px;
+
+  /* Typography sizes */
+  --fs-display-xl: 64px;
+  --fs-display-lg: 56px;
+  --fs-heading-xl: 24px;
+  --fs-heading-lg: 22px;
+  --fs-heading-md: 20px;
+  --fs-heading-sm: 18px;
+  --fs-body-lg: 18px;
+  --fs-body-md: 16px;
+  --fs-body-sm: 14px;
+  --fs-caption-md: 13px;
+  --fs-caption-sm: 12px;
+
+  /* Layout */
+  --container-max: 1240px;
+  --nav-height: 56px;
+
+  /* Motion — unified easing & timing */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --motion-fast: 0.18s;
+  --motion-base: 0.32s;
+  --motion-slow: 0.55s;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --space-section: 72px;
+    --fs-display-xl: 48px;
+    --fs-display-lg: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-section: 64px;
+    --fs-display-xl: 40px;
+    --fs-display-lg: 36px;
+    --fs-heading-xl: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --space-section: 48px;
+    --fs-display-xl: 36px;
+    --fs-display-lg: 30px;
+  }
+}
